@@ -8,8 +8,8 @@ export class Server {
   static getInstance(): Server {
     if (!Server.instance) {
       mongoose.connect(process.env.MONGO_URI as string, {}).then(() => {
-        Server.instance = App.getInstance().listen(5000, () => {
-          console.log("Server is running on port 5000")
+        Server.instance = App.getInstance().listen(process.env.PORT, () => {
+          console.log(`Server is running on port ${process.env.PORT}`)
         })
         console.log("Connected to MongoDB")
       })
