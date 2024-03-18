@@ -8,13 +8,7 @@ export class App {
       App.instance = express()
       App.instance.use(express.json())
       App.instance.use(express.urlencoded({ extended: true }))
-      App.instance.use(
-        cors({
-          origin: "*",
-          // methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-          // allowedHeaders: "Content-Type,Authorization",
-        })
-      )
+      App.instance.use(cors())
       App.instance.use("/", RootRouter.getRouter())
     }
     return App.instance
