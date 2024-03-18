@@ -9,6 +9,9 @@ export class RootRouter {
   private router: Router
   private constructor() {
     this.router = Router()
+    this.router.get("/", (req: Request, res: Response) => {
+      res.send("Welcome to the API")
+    })
     this.router.use("/v1/user/", UserRouter.getRouter())
     this.router.use("/v1/auth/", AuthRouter.getRouter())
 
