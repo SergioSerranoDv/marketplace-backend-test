@@ -1,7 +1,7 @@
 {
   "name": "marketplace-backend-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "MagicLoc thecnical test for backend marketplace application",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./src/index.ts",
