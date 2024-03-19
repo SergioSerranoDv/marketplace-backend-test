@@ -66,8 +66,7 @@ Cloning the repository will result in the following files:
 
 ## Authentication
 
-The authentications is based on JSON web tokens, token expires after one hour. The hash implemented
-is HMAC
+The authentications is based on JSON web tokens, token expires after one hour. The algorithm implemented is HMAC
 
 ```
 jwt.sign(payload, process.env.JWT_SECRET as string, { expiresIn: "1h" })
