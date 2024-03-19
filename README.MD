@@ -6,6 +6,9 @@ Moreover, the backend codebase is designed with a strong emphasis on object-orie
 
 (![alt text](image.png))
 
+## Desing Pattern
+The application employs the Singlenton Pattern to guarantee that instances are initialized only once throughout their lifecycle. 
+
 ## Directories structure ASCII
 
 Cloning the repository will result in the following files:
