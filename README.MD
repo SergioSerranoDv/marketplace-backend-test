@@ -4,7 +4,7 @@ The backend application is built using Node.js and TypeScript, following a Model
 
 Moreover, the backend codebase is designed with a strong emphasis on object-oriented and SOLID priciples, ensuring robutness, maintainability, and scalabilility.
 
-![image](https://github.com/SergioSerranoDv/marketplace-frontend-test/assets/93232800/a2096b60-028b-4f25-97d7-ffc4a77b4c38)
+(![alt text](image.png))
 
 ## Directories structure ASCII
 
