@@ -156,6 +156,7 @@ The data is stored in MongoDB connected through mongoose, the database have the 
 -- Products
 -- User
 ```
+// User Model 
 import { Schema } from "mongoose"
 import mongoose from "mongoose"
 
