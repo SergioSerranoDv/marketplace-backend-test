@@ -150,6 +150,45 @@ The application meets the following requirements
 
 ![VPS](https://github.com/SergioSerranoDv/marketplace-frontend-test/assets/93232800/45591b86-25ed-4093-a16b-f7b1bb58f6c7)
 
+## Database diagrma
+The data is stored in MongoDB connected through mongoose, the database have the following structure:
+-2 collections
+-- Products
+-- User
+```
+import { Schema } from "mongoose"
+import mongoose from "mongoose"
+
+export interface User extends Document {
+  email: string
+  password: string
+  roles: string[]
+}
+
+const UserSchema = new Schema(
+  {
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    password: {
+      type: String,
+      required: true,
+    },
+    roles: {
+      type: [String],
+      required: true,
+      default: ["seller"],
+    },
+  },
+  {
+    timestamps: true,
+  }
+)
+export const User = mongoose.model<User>("User", UserSchema)
+
+```
 ## Roles
 
 ### Seller
